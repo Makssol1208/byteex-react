@@ -16,7 +16,7 @@ export default function Benefits() {
     <section className="benefits">
       <div className="container">
         <h6 className="benefits-title">as seen in</h6>
-        <div className="benefits-artboard">
+        <div className="benefits-artboard gradient">
           <motion.div
             initial={{ x: 0 }}
             animate={{ x: "-100%" }}
@@ -25,7 +25,7 @@ export default function Benefits() {
           >
             {brandsImg.map((brand, index) => {
               return (
-                <a key={index} to="/">
+                <a key={index} href="#!">
                   <img src={brand} />
                 </a>
               );
