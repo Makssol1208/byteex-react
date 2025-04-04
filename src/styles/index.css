@@ -1,0 +1,75 @@
+@import url(https://db.onlinewebfonts.com/c/13ab13418f633c1b0516fed6e30bedbc?family=Suisse+Int%27l);
+@import './media.css';
+@import './reset.css';
+
+:root {
+  --font-primary: "Sofia Pro";
+  --font-secondary: "Suisse Int'l";
+  --color-title: #01005b;
+  --color-gray: #676869;
+  --color-lightgray: #6c6c6c;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.none {
+  display: none !important;
+}
+
+.container {
+  max-width: 1270px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-small {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-large {
+  max-width: 1495px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  max-width: 362px;
+  height: 56px;
+  text-align: center;
+  padding: 20px 50px;
+  font-size: 18px;
+  font-family: var(--font-primary);
+  letter-spacing: 1px;
+  line-height: 1.2;
+  border-radius: 8px;
+
+  color: #fff;
+  background-color: var(--color-title);
+  transition: 0.3s ease-in;
+}
+
+.btn:hover {
+  background-color: #1a1875;
+}
+
+.btn.mobile {
+  display: none;
+}
+
+.connection-title.mobile {
+  display: none;
+}
+
+

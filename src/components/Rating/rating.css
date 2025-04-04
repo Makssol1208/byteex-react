@@ -1,0 +1,33 @@
+.rating-wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.rating-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 15px;
+  padding-top: 11px;
+}
+
+.rating-bottom span {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 0.8;
+  letter-spacing: 1px;
+  color: #828282;
+}
+
+.rating-stars img {
+  width: 80px;
+  height: 13px;
+  margin-top: 2px;
+}
+
+.rating-wrap.mobile {
+  display: none;
+}

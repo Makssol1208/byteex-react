@@ -1,0 +1,10 @@
+.top-info {
+    text-align: center;
+    padding: 10px;
+    font-size: 11px;
+    font-family: var(--font-secondary);
+    font-weight: normal;
+    color: var(--color-gray);
+    background-color: #f9f0e5;
+  }
+  
