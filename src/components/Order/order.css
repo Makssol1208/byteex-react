@@ -1,0 +1,91 @@
+.order {
+  text-align: center;
+  padding: 75px 0;
+  font-family: var(--font-primary);
+}
+
+.order-title {
+  padding-bottom: 46px;
+  text-align: center;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: 1px;
+  color: var(--color-title);
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 42px;
+  padding-bottom: 56px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 346px;
+  min-height: 321px;
+  padding: 77px 35px 11px;
+
+  background-color: #f0eeef;
+  border-radius: 8px;
+  outline: 1px solid #ededed;
+  transition: all 0.6s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(15px);
+}
+
+.card img {
+  transition: all 0.6s;
+}
+
+.card img:hover {
+  transform: translateY(-10px);
+}
+
+.card h5:hover {
+  transform: translateY(10px);
+}
+
+.card.center {
+  background-color: #f9f0e6;
+}
+
+.card h5 {
+  padding: 22px 0;
+  font-size: 22px;
+  line-height: 1.8;
+  letter-spacing: 0.8px;
+  transition: all 0.5s;
+}
+
+.card p {
+  max-width: 275px;
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: var(--color-gray);
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 72px;
+  height: 72px;
+  /* object-fit: cover; */
+}

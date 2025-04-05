@@ -1,8 +1,9 @@
 import { motion } from "motion/react";
-import { brandsImg } from "../data/brandsImg";
+import Slider from "react-slick";
 
 import Rating from "../Rating/Rating";
 
+import { brandsImg } from "../data/brandsImg";
 import noplastic from "../../assets/img/icons/noplastic.png";
 import response from "../../assets/img/icons/response.png";
 import nightday from "../../assets/img/icons/day-night.svg";
@@ -10,8 +11,26 @@ import comfort from "../../assets/img/icons/comfort.png";
 import benefits_ekaterina from "../../assets/img/benefits/benef_ekat.jpg";
 
 import "./benefits.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Benefits() {
+  const settings = {
+    customPaging: function () {
+      return (
+        <a>
+          <img src={benefits_ekaterina} />
+        </a>
+      );
+    },
+    dots: true,
+    dotsClass: "slick-dots slick-thumb",
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <section className="benefits">
       <div className="container">
@@ -126,8 +145,24 @@ export default function Benefits() {
               </div>
             </div>
             <div className="benefits-img">
-              <img src={benefits_ekaterina} alt="Benefits image" />
-              <span>White Robe</span>
+              <Slider {...settings}>
+                <div className="benefits-card">
+                  <img src={benefits_ekaterina} className="benefits-img" />
+                  <span>White Robe</span>
+                </div>
+                <div className="benefits-card">
+                  <img src={benefits_ekaterina} className="benefits-img" />
+                  <span>White Robe</span>
+                </div>
+                <div className="benefits-card">
+                  <img src={benefits_ekaterina} className="benefits-img" />
+                  <span>White Robe</span>
+                </div>
+                <div className="benefits-card">
+                  <img src={benefits_ekaterina} className="benefits-img" />
+                  <span>White Robe</span>
+                </div>
+              </Slider>
             </div>
           </div>
           <Rating />

@@ -1,8 +1,8 @@
 .benefits {
   display: flex;
   flex-direction: column;
-  position: relative;
-  padding: 77px 0 40px;
+  /* position: relative; */
+  padding: 77px 0 80px;
   font-family: var(--font-primary);
   background: linear-gradient(
     180deg,
@@ -21,6 +21,12 @@
     rgba(0, 0, 0, 1) 90%,
     rgba(0, 0, 0, 0)
   );
+}
+
+.benefits-card {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
 }
 
 .benefits-title {
@@ -62,7 +68,7 @@
 }
 
 .benefits-text {
-  padding-top: 3px;
+  padding-top: 50px;
 }
 
 .benefits-text__title {
@@ -97,7 +103,7 @@
 }
 
 .benefits-advants__top p {
-  max-width: 497px;
+  width: 497px;
   font-size: 15px;
   line-height: 1.7;
   color: var(--color-lightgray);
@@ -111,6 +117,7 @@
 
 .benefits-img {
   display: flex;
+  min-width: 0;
   flex-direction: column;
   text-align: center;
 }
@@ -125,4 +132,15 @@
   font-family: var(--font-secondary);
   font-size: 13px;
   color: var(--color-gray);
+}
+
+/* Skider */
+
+.slick-dots.slick-dots {
+  bottom: 68px;
+}
+
+.slick-dots.slick-dots li {
+  width: 26px;
+  height: 23px;
 }

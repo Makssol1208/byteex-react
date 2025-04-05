@@ -62,7 +62,7 @@ export default function Hero() {
               <img
                 src={vector}
                 className="btn-img"
-                alt="arrow button"
+                alt="arrow"
               />
             </button>
           </div>
