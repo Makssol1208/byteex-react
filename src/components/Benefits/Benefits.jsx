@@ -11,8 +11,6 @@ import comfort from "../../assets/img/icons/comfort.png";
 import benefits_ekaterina from "../../assets/img/benefits/benef_ekat.jpg";
 
 import "./benefits.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 export default function Benefits() {
   const settings = {

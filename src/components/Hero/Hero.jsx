@@ -1,15 +1,14 @@
 import "./hero.css";
 
-import LOGO from '../../assets/img/hero/LOGO.png';
-import HERO from '../../assets/img/hero/hero.png';
+import LOGO from "../../assets/img/hero/LOGO.png";
+import HERO from "../../assets/img/hero/hero.png";
 
-import nightday from '../../assets/img/icons/nightday.png';
-import noplastic from '../../assets/img/icons/noplastic.png';
-import comfort from '../../assets/img/icons/comfort.png';
-import vector from '../../assets/img/hero/Vector.png';
-import stars from '../../assets/img/hero/stars.svg';
-import user from '../../assets/img/hero/user_comment.png';
-
+import nightday from "../../assets/img/icons/nightday.png";
+import noplastic from "../../assets/img/icons/noplastic.png";
+import comfort from "../../assets/img/icons/comfort.png";
+import stars from "../../assets/img/hero/stars.svg";
+import user from "../../assets/img/hero/user_comment.png";
+import Button from "../Button/Button";
 
 export default function Hero() {
   return (
@@ -56,15 +55,7 @@ export default function Hero() {
                 </p>
               </div>
             </div>
-
-            <button className="btn">
-              Customize Your Outfit
-              <img
-                src={vector}
-                className="btn-img"
-                alt="arrow"
-              />
-            </button>
+            <Button />
           </div>
           <div className="hero-img">
             <img src={HERO} alt="Hero image" />

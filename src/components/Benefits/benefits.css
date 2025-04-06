@@ -134,7 +134,7 @@
   color: var(--color-gray);
 }
 
-/* Skider */
+/* Slider settings */
 
 .slick-dots.slick-dots {
   bottom: 68px;
@@ -144,3 +144,19 @@
   width: 26px;
   height: 23px;
 }
+
+.slick-prev:before {
+  content: url("./../../assets/img/icons/prev.png") !important;
+}
+.slick-next:before {
+  content: url("./../../assets/img/icons/next.png") !important;
+}
+
+.slick-prev {
+  left: 0px !important;
+}
+.slick-next {
+  right: 0px !important;
+}
+
+/* ./Slider settings */
