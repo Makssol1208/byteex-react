@@ -6,7 +6,7 @@ import Rating from "../Rating/Rating";
 import { brandsImg } from "../data/brandsImg";
 import noplastic from "../../assets/img/icons/noplastic.png";
 import response from "../../assets/img/icons/response.png";
-import nightday from "../../assets/img/icons/day-night.svg";
+import nightday from "../../assets/img/icons/nightday.png";
 import comfort from "../../assets/img/icons/comfort.png";
 import benefits_ekaterina from "../../assets/img/benefits/benef_ekat.jpg";
 
